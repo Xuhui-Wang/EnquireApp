@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/list_item_legislator">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:paddingLeft="5dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="Apple Pie"
+        app:srcCompat="@drawable/h"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/itemNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="Legislator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15sp"
+
+        />
+    <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="15sp"
+        android:layout_below="@+id/itemNameText"
+        android:text="Rep"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:id="@+id/clickArrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight = "10dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="Apple Pie"
+        android:src="@drawable/ic_arrow"
+         />
+</RelativeLayout>
